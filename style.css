@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 div.start{
+    position: absolute;
     height: 100vh;
     width: 100%;
     background-image: linear-gradient(135deg, red 35%, white 45% ,blue 100%);
@@ -19,7 +20,7 @@ h1.title{
 h2.choice{
     text-transform: uppercase;
     font-family: arial, 'sans-serif';
-   margin-bottom: 5vh;
+    padding: 20px 0;
 }
 div.buttons{
     margin-top: 50vh;
@@ -37,4 +38,37 @@ button:hover{
     background-color: black;
     border-color:black;
     color:white;
+}
+body{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-height: 90vh;
+}
+div.easy{
+flex-basis: 22%;
+height: 25vh;
+flex-grow: 1;
+border: 5px solid white;
+
+}
+div.medium {
+    flex-basis: 22%;
+height: 16.66vh;
+flex-grow: 1;
+border: 5px solid white;
+
+}
+div.hard{
+    flex-basis: 15%;
+height: 16.66vh;
+flex-grow: 1;
+border: 5px solid white;
+
+}
+div.active{
+    background-color: #333 !important; 
+}
+div.unactive{
+    background-color:white !important;
 }
