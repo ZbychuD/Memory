@@ -13,7 +13,7 @@ div.start{
 h1.title{
     font-family: arial, 'sans-serif';
     color: white;
-    padding: 20px 40px;
+    padding: 50px 40px 0 40px;
     font-size: 40px;
     text-transform: uppercase;
 }
@@ -23,7 +23,7 @@ h2.choice{
     padding: 20px 0;
 }
 div.buttons{
-    margin-top: 50vh;
+    margin-top: 40vh;
 }
 button{
     font-family: arial, 'sans-serif';
@@ -72,3 +72,56 @@ div.active{
 div.unactive{
     background-color:white !important;
 }
+/*media*/
+@media (orientation:portrait) and (min-width:370px){
+h2.choice{
+font-size: 40px;
+}
+button{
+    font-size: 25px;
+}
+}
+@media (orientation:portrait) and (min-width:720px){
+    h1.title{
+        font-size: 70px;
+    }
+    h2.choice{
+    font-size: 60px;
+    }
+    button{
+        font-size: 45px;
+    }
+    }
+    @media (orientation:landscape){
+        h1.title{
+            color:black;
+        }
+        div.buttons{
+            margin-top: 20vh;
+        }
+    }
+    @media (orientation:landscape)and (min-width:720px){
+        h1.title{
+            font-size: 60px;
+        }
+        h2.choice{
+            font-size: 40px;
+        }
+        button{
+            font-size: 30px;
+        }
+    }
+    @media(min-width:1024px){
+        h1.title{
+            font-size: 80px;
+        }
+        h2.choice{
+            font-size: 60px;
+        }
+        
+        button{
+            border-width: 5px;
+            font-size: 45px;
+            margin-top: 5vh;
+        }
+    }
